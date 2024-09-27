@@ -45,5 +45,23 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+	<!-- Added the permission keys below  -->
+    <key>NSCameraUsageDescription</key>
+    <string>We need access to your camera for image and object recognition features.</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>We need access to your microphone for voice recognition features.</string>
+
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your photo library to pick images for analysis.</string>
+
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>We need permission to save images to your photo library.</string>
+
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>We need access to your speech recognition to convert speech to text.</string>
+    <!-- Permission keys end here -->
+
 </dict>
 </plist>
