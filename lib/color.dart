@@ -131,8 +131,13 @@ class _ColorRecognitionState extends State<ColorRecognition> {
 
   Future<void> loadModel() async {
     await Tflite.loadModel(
-      model: "assets/model_unquant2.tflite",
-      labels: "assets/labels2.txt",
+      // model: "assets/model_unquant2.tflite",
+      // labels: "assets/labels2.txt",
+      model: "assets/mobilenet_v1_1.0_224.tflite",
+      labels: "assets/labels.txt",
+      numThreads: 1,
+      isAsset: true, 
+      useGpuDelegate: false 
     );
   }
 

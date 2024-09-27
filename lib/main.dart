@@ -1,3 +1,4 @@
+import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:peekpal/color.dart';
 import 'package:peekpal/currency.dart';

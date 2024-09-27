@@ -131,8 +131,13 @@ class _CurrencyRecognitionState extends State<CurrencyRecognition> {
 
   Future<void> loadModel() async {
     await Tflite.loadModel(
-      model: "assets/model_unquant.tflite",
+      // model: "assets/model_unquant.tflite",
+      // labels: "assets/labels.txt",
+      model: "assets/mobilenet_v1_1.0_224.tflite",
       labels: "assets/labels.txt",
+      numThreads: 1, 
+      isAsset: true, 
+      useGpuDelegate: false 
     );
   }
 

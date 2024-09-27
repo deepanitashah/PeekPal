@@ -6,6 +6,11 @@ plugins {
 }
 
 android {
+    aaptOptions {
+        noCompress 'tflite'
+        noCompress 'lite'
+    }
+
     namespace = "com.example.peekpal"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
